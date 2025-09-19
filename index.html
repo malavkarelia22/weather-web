@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🌤 Weather Forecast</h1>
+
+  <div class="search-box">
+    <input type="text" id="cityInput" placeholder="Enter city name">
+    <button onclick="getWeather()">Search</button>
+    <button id="toggleUnit">°C/°F</button>
+  </div>
+
+  <!-- Local time display appears only after searching a city -->
+  <div id="timeDate" class="time-display"></div>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
